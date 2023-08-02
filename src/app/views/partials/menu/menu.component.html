@@ -1,0 +1,11 @@
+<div class="stepper">
+  <div *ngFor="let step of steps; let i = index"
+       class="stepper__step"
+       [class.active]="i === activeStep"
+       (click)="handleStepClick(i)">
+    <div class="stepper__step-icon">
+      <fa-icon [icon]="step.icon" [class]="getIconClass(i)"></fa-icon>
+    </div>
+    <div class="stepper__step-label">{{ step.label }}</div>
+  </div>
+</div>

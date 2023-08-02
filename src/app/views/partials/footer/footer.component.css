@@ -1,0 +1,10 @@
+.div-examen{
+  display: flex;
+  flex-direction: row;
+   align-items: center;
+   float: right;
+}
+
+
+
+
